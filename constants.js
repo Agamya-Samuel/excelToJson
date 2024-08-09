@@ -28,7 +28,7 @@ const employeeHeader = [
 	'Reporting Manager-1',
 	'Reporting Manager-2',
 	'PAN No',
-	'ESIC  Applicable',
+	'ESIC Applicable',
 	'ESIC No',
 	'PF Applicable',
 	'PF No',
