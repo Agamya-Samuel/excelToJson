@@ -1,0 +1,57 @@
+p {
+	font-size: 16px;
+	font-weight: 550;
+	margin: 0;
+}
+/* Basic styling for the output */
+#output {
+	white-space: pre-wrap; /* Preserve whitespace for formatting */
+	font-family: monospace; /* Use a monospace font for readability */
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 10px;
+	max-height: 850px;
+	overflow-y: auto;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+textarea#note {
+	width: 100%;
+	box-sizing: border-box;
+	direction: rtl;
+	display: block;
+	max-width: 100%;
+	line-height: 1.5;
+	padding: 15px 15px 30px;
+	border-radius: 3px;
+	border: 1px solid #f7e98d;
+	font: 13px Tahoma, cursive;
+	transition: box-shadow 0.5s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background: linear-gradient(#f9efaf, #f7e98d);
+	background: -o-linear-gradient(#f9efaf, #f7e98d);
+	background: -ms-linear-gradient(#f9efaf, #f7e98d);
+	background: -moz-linear-gradient(#f9efaf, #f7e98d);
+	background: -webkit-linear-gradient(#f9efaf, #f7e98d);
+}
+.button {
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 0;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.button:hover {
+	background-color: #45a049;
+}

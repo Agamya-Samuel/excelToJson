@@ -9,8 +9,10 @@ function excelToJson(file) {
 	return new Promise((resolve, reject) => {
 		const reader = new FileReader();
 
-		reader.onload = (event) => {
+		reader.onload = async (event) => {
 			try {
+				const XLSX = await import("https://cdn.sheetjs.com/xlsx-0.19.2/package/xlsx.mjs");
+
 				// Parse the Excel file
 				const workbook = XLSX.read(event.target.result, {
 					type: 'binary',

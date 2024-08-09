@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel to JSON</title>
-    <style>
-        /* Basic styling for the output */
-        #output {
-            white-space: pre-wrap; /* Preserve whitespace for formatting */
-            font-family: monospace; /* Use a monospace font for readability */
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 10px;
-            max-height: 850px;
-            overflow-y: auto;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-    </style>
-</head>
-<body>
-    <a href="https://github.com/Agamya-Samuel/excelToJson" target="_blank">Source Code</a>
-    <input type="file" id="file-input" />
-    <div id="output"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="excelToJson.js"></script>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				background-color: #111010e2;
+			}
+			.container {
+				text-align: center;
+			}
+			.button {
+				background-color: #4caf50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 10px;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+			.button:hover {
+				background-color: #45a049;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<a href="/excelToJson/excelToJson.html">
+				<button class="button">Excel to JSON</button>
+			</a>
+			<a href="/jsonToExcel/jsonToExcel.html">
+				<button class="button">JSON to Excel</button>
+			</a>
+		</div>
+	</body>
 </html>

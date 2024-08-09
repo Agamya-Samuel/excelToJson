@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		fileInput.addEventListener('change', (event) => {
 			const file = event.target.files[0];
 			if (file) {
+				alert(
+					'Please wait patiently while your EXCEL file is being transcoded...'
+				);
 				excelToJson(file)
 					.then((json) => {
 						// Beautify and display the JSON

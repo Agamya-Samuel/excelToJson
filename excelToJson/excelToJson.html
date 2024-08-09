@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Excel to JSON</title>
+		<style>
+			/* Basic styling for the output */
+			#output {
+				white-space: pre-wrap; /* Preserve whitespace for formatting */
+				font-family: monospace; /* Use a monospace font for readability */
+				border: 1px solid #ccc;
+				padding: 10px;
+				margin-top: 10px;
+				max-height: 850px;
+				overflow-y: auto;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				margin: 10px;
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+            .button {
+				background-color: #4caf50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 10px 0;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+			.button:hover {
+				background-color: #45a049;
+			}
+		</style>
+		
+		<script src="index.js"></script>
+		<script src="excelToJson.js"></script>
+	</head>
+	<body>
+		<a href="https://github.com/Agamya-Samuel/excelToJson" target="_blank"
+			>Source Code</a
+		>
+		<h2>Excel to JSON</h2>
+		<input type="file" id="file-input" class="button"/>
+		<div id="output"></div>
+	</body>
+</html>
